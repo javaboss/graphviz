@@ -1,0 +1,12 @@
+digraph Fear {
+    label=<<b>The Cycle of Fear</b>>
+    labelloc=t
+    page = "16.5,11.7"
+    overlap = "false"
+    ratio = "fill"
+    size = "16.5, 11.7"
+    splines = "true"
+
+    node [fontname="calibri", margin="0.1,0.1", shape=rect, style="filled,rounded"]
+    
+	}
