@@ -1,0 +1,38 @@
+digraph Devops {
+    label=<<b>CI/CD Challenges</b>>
+    labelloc=t
+    page = "16.5,11.7"
+    overlap = "false"
+    ratio = "fill"
+    size = "16.5, 11.7"
+    splines = "true"
+
+    node [fontname="calibri", margin="0.1,0.1", shape=rect, style="filled,rounded"]
+        "Challenges" -> "Cycle Time" [ label="0" ];
+
+        "Challenges" -> "Availability of Runners"  [label="0"]
+        "Availability of Runners" -> "Builds wait a long time for scheduling"  [label="0"]
+
+        "Challenges" -> "Troubleshooting failed builds"  [label="0"]
+        "Troubleshooting failed builds" -> "Limited visibility over Runner health" [label="0"]
+        "Troubleshooting failed builds" -> "Runners are centrally owned + managed" [label="0"]
+        
+
+        "Challenges" -> "Test Suite Execution Time"  [label="0"]
+        "Test Suite Execution Time" -> "UI end-to-end"  [label="0"]
+        "Test Suite Execution Time" -> "Test Acceptance"  [label="0"]
+        "Test Suite Execution Time" -> "Non-functional Tests"  [label="0"]
+
+        "Challenges" -> "Auto-deployment to UAT" [label="0"]
+        "Auto-deployment to UAT" -> "Triggered Manually in GCP" [label="0"]
+        "Auto-deployment to UAT" -> "Implemented on-prem" [label="0"]
+
+        "Challenges" -> "SDLC Governance Pipeline" [label="0"]
+
+        "Challenges" -> "Quality Gates (like vulnerability)" [label="0"]
+
+        "Challenges" -> "Feedback Loops" [label="0"]
+        "Feedback Loops" -> "Are way too long" [label="0"]
+        "Feedback Loops" -> "Need to be able to develop/debug/test locally" [label="0"]
+
+	}
