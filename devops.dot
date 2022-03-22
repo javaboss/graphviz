@@ -2,8 +2,8 @@ digraph Devops {
     label=<<b>CI/CD Challenges</b>>
     labelloc=t
     page = "16.5,11.7"
-    overlap = "false"
     ratio = "fill"
+    overlap = "false"
     size = "16.5, 11.7"
     splines = "true"
 
