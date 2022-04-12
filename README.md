@@ -41,7 +41,6 @@ digraph Devops {
     size = "16.5, 11.7"
     splines = "curved"
 
-//[label="0"]
     node [fontname="calibri", margin="0.1,0.1", shape=circle, style="filled,rounded", color="lightgrey"]
         "Challenges"
 
@@ -53,4 +52,5 @@ digraph Devops {
         "Builds" -> "Availability of Runners"
         "Builds" -> "Troubleshooting failed builds"
         "Troubleshooting failed builds" -> "Limited visibility over Runner health"
-}
+ }
+'/>
