@@ -31,12 +31,7 @@ gravizo
 
 How to include graphviz graphs in github README.md
 
-### New Plantuml activity Diagram ###
-![Alt text](https://g.gravizo.com/source/custom_mark21?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
-
-<details> 
-<summary></summary>
-custom_mark21	
+![Alt text](https://g.gravizo.com/svg?
 digraph Devops {
     label=<<b>CI/CD Challenges</b>>
     labelloc=t
@@ -58,6 +53,4 @@ digraph Devops {
         "Builds" -> "Availability of Runners"
         "Builds" -> "Troubleshooting failed builds"
         "Troubleshooting failed builds" -> "Limited visibility over Runner health"
-
-custom_mark21
-</details>
+}
