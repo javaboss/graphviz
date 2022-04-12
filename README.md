@@ -32,20 +32,15 @@ gravizo
 How to include graphviz graphs in github README.md
 
 <img src='https://g.gravizo.com/svg?
-digraph Devops {
-    label=<<b>CI/CD Challenges</b>>
-    labelloc=t
-    page = "16.5,11.7"
-    ratio = "auto"
-    overlap = "false"
-    size = "16.5, 11.7"
-    splines = "curved"
-    node [fontname="calibri", margin="0.1,0.1", shape=circle, style="filled,rounded", color="lightgrey"]
-        "Challenges"
-    node [fontname="calibri", margin="0.1,0.1", shape=rect, style="filled,rounded", color="lightgrey"]
-        "Challenges" -> "Cycle time is too long"
-        "Challenges" -> "Builds"
-        "Builds" -> "Availability of Runners"
-        "Builds" -> "Troubleshooting failed builds"
-	}
+ digraph G {
+   main -> parse -> execute;
+   main -> init;
+   main -> cleanup;
+   execute -> make_string;
+   execute -> printf
+   init -> make_string;
+   main -> printf;
+   execute -> compare;
+ }
+'/>
 '>
