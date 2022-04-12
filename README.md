@@ -21,6 +21,11 @@ Install the Graphviz Preview plugin
 ctrl + shift + P
 "Open Preview to the side" to show graph previews
 
+To render in github README.md:
+https://github.com/TLmaK0/gravizo
+
+https://g.gravizo.com
+
 gravizo
 =======
 
