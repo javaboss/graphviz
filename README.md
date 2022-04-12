@@ -42,5 +42,4 @@ How to include graphviz graphs in github README.md
    main -> printf;
    execute -> compare;
  }
-'/>
 '>
