@@ -29,26 +29,30 @@ How to include graphviz graphs in github README.md
 ### New Plantuml activity Diagram ###
 ![Alt text](https://g.gravizo.com/source/custom_mark21?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
 
-![Alt text](https://g.gravizo.com/source/custom_mark21?https%3A%2F%2Fraw.githubusercontent.com%2FTLmaK0%2Fgravizo%2Fmaster%2FREADME.md)
-
 <details> 
 <summary></summary>
 custom_mark21	
-@startuml
-start
-:init;
--> test of color;
-if (color?) is (<color:red>red) then
-:print red;
-else 
-:print not red;
-note right: no color
-endif
-partition End {
-:end;
-}
--> this is the end;
-end
-@enduml
+digraph Devops {
+    label=<<b>CI/CD Challenges</b>>
+    labelloc=t
+    page = "16.5,11.7"
+    ratio = "auto"
+    overlap = "false"
+    size = "16.5, 11.7"
+    splines = "curved"
+
+//[label="0"]
+    node [fontname="calibri", margin="0.1,0.1", shape=circle, style="filled,rounded", color="lightgrey"]
+        "Challenges"
+
+    // Challenges
+    node [fontname="calibri", margin="0.1,0.1", shape=rect, style="filled,rounded", color="lightgrey"]
+        "Challenges" -> "Cycle time is too long"
+
+        "Challenges" -> "Builds"
+        "Builds" -> "Availability of Runners"
+        "Builds" -> "Troubleshooting failed builds"
+        "Troubleshooting failed builds" -> "Limited visibility over Runner health"
+
 custom_mark21
 </details>
